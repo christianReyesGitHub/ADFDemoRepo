@@ -8,7 +8,7 @@
 		"parameters": {
 			"filename": {
 				"type": "string",
-				"defaultValue": "@item().name"
+				"defaultValue": "countries.csv"
 			}
 		},
 		"annotations": [],
