@@ -91,7 +91,10 @@
 									"referenceName": "CsvData",
 									"type": "DatasetReference",
 									"parameters": {
-										"filename": "countries.csv"
+										"filename": {
+											"value": "@{item().name}",
+											"type": "Expression"
+										}
 									}
 								},
 								"fieldList": [
