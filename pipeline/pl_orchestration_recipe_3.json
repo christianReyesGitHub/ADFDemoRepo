@@ -140,7 +140,10 @@
 										"type": "String"
 									},
 									"ModifiedAt": {
-										"value": null,
+										"value": {
+											"value": "@activity('ForEach Metadata').output.lastModified",
+											"type": "Expression"
+										},
 										"type": "DateTime"
 									},
 									"UpdatedAt": {
