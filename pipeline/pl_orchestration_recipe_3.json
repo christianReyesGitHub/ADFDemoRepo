@@ -133,15 +133,15 @@
 								"storedProcedureName": "[dbo].[InsertFileMetadata]",
 								"storedProcedureParameters": {
 									"FileName": {
-										"value": "hola",
+										"value": null,
 										"type": "String"
 									},
 									"ModifiedAt": {
-										"value": "26/08/2022",
+										"value": null,
 										"type": "DateTime"
 									},
 									"UpdatedAt": {
-										"value": "26/08/2022",
+										"value": null,
 										"type": "DateTime"
 									}
 								}
