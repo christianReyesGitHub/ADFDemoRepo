@@ -62,7 +62,7 @@
 						"referenceName": "AzureSqlTables",
 						"type": "DatasetReference",
 						"parameters": {
-							"tableName": "Country"
+							"tableName": "hola"
 						}
 					}
 				]
