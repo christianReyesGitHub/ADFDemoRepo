@@ -13,7 +13,7 @@
 				"fileName": "planes.csv",
 				"container": "data"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": ";",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
