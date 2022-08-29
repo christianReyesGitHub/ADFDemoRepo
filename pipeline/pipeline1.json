@@ -30,7 +30,42 @@
 						"type": "SqlDWSink",
 						"allowCopyCommand": true
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Name",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "IATA code",
+									"type": "String"
+								},
+								"sink": {
+									"name": "IATA_code",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ICAO code",
+									"type": "String"
+								},
+								"sink": {
+									"name": "ICAO_code",
+									"type": "String"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
