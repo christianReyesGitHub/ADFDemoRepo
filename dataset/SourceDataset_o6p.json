@@ -1,0 +1,36 @@
+{
+	"name": "SourceDataset_o6p",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OrchestrationAzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "planes.csv",
+				"container": "data"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "IATA code",
+				"type": "String"
+			},
+			{
+				"name": "ICAO code",
+				"type": "String"
+			}
+		]
+	}
+}
