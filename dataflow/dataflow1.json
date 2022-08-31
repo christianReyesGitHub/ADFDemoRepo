@@ -37,6 +37,12 @@
 			"transformations": [
 				{
 					"name": "Date"
+				},
+				{
+					"name": "ratingstats"
+				},
+				{
+					"name": "join1"
 				}
 			],
 			"scriptLines": [
@@ -79,7 +85,15 @@
 				"     validateSchema: false,",
 				"     limit: 1000,",
 				"     ignoreNoFilesFound: false) ~> tagsSourceStream",
-				"ratingsSourceStream derive(timestamp = toDate(seconds(timestamp), 'yyyy-MM-dd')) ~> Date"
+				"ratingsSourceStream derive(timestamp = toDate(seconds(timestamp), 'yyyy-MM-dd')) ~> Date",
+				"Date aggregate(groupBy(movieId),",
+				"     count_rankings = count(),",
+				"          ranking_mean = mean(rating)) ~> ratingstats",
+				"ratingstats, moviesSourceStream join(ratingstats@movieId == moviesSourceStream@movieId,",
+				"     joinType:'left',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> join1"
 			]
 		}
 	}
