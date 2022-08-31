@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "moviesDestination",
+					"value": "moviesDestination.csv",
 					"type": "Expression"
 				},
 				"fileSystem": "movielensdestination"
