@@ -1,0 +1,81 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ratingsSource",
+						"type": "DatasetReference"
+					},
+					"name": "ratingsSourceStream"
+				},
+				{
+					"dataset": {
+						"referenceName": "linksSource",
+						"type": "DatasetReference"
+					},
+					"name": "linksSourceStream"
+				},
+				{
+					"dataset": {
+						"referenceName": "moviesSource",
+						"type": "DatasetReference"
+					},
+					"name": "moviesSourceStream"
+				},
+				{
+					"dataset": {
+						"referenceName": "tagsSource",
+						"type": "DatasetReference"
+					},
+					"name": "tagsSourceStream"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          userId as short,",
+				"          movieId as integer,",
+				"          rating as double,",
+				"          timestamp as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     inferDriftedColumnTypes: true,",
+				"     limit: 1000,",
+				"     ignoreNoFilesFound: false) ~> ratingsSourceStream",
+				"source(output(",
+				"          movieId as integer,",
+				"          imdbId as integer,",
+				"          tmdbId as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     limit: 1000,",
+				"     ignoreNoFilesFound: false) ~> linksSourceStream",
+				"source(output(",
+				"          movieId as integer,",
+				"          title as string,",
+				"          genres as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     limit: 1000,",
+				"     ignoreNoFilesFound: false) ~> moviesSourceStream",
+				"source(output(",
+				"          userId as integer,",
+				"          movieId as integer,",
+				"          tag as string,",
+				"          timestamp as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     limit: 1000,",
+				"     ignoreNoFilesFound: false) ~> tagsSourceStream"
+			]
+		}
+	}
+}
