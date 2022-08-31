@@ -34,7 +34,11 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "Date"
+				}
+			],
 			"scriptLines": [
 				"source(output(",
 				"          userId as integer,",
@@ -74,7 +78,8 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     limit: 1000,",
-				"     ignoreNoFilesFound: false) ~> tagsSourceStream"
+				"     ignoreNoFilesFound: false) ~> tagsSourceStream",
+				"ratingsSourceStream derive(timestamp = toDate(seconds(timestamp), 'yyyy-MM-dd')) ~> Date"
 			]
 		}
 	}
