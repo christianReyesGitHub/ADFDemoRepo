@@ -37,7 +37,7 @@
 			"transformations": [],
 			"scriptLines": [
 				"source(output(",
-				"          userId as short,",
+				"          userId as integer,",
 				"          movieId as integer,",
 				"          rating as double,",
 				"          timestamp as integer",
