@@ -38,6 +38,104 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Name",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Job Titles",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Job Titles",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Department",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Department",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Full or Part-Time",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Full or Part-Time",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Salary or Hourly",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Salary or Hourly",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Typical Hours",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Typical Hours",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Annual Salary",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Annual Salary",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Hourly Rate",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Hourly Rate",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
