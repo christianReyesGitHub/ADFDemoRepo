@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "ADFcookbookJob1-JoseChristianReyes2"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_connectionString": {
 			"value": ""
 		},
@@ -13,6 +16,9 @@
 		},
 		"OrchestrationAzureBlobStorage1_connectionString": {
 			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://azuredatalakestorage1234.dfs.core.windows.net/"
 		}
 	}
 }
