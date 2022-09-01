@@ -24,7 +24,7 @@
 			"transformations": [],
 			"scriptLines": [
 				"parameters{",
-				"     filenameparam as string ('myfile.txt')",
+				"     filenameparam as string",
 				"}",
 				"source(output(",
 				"          Column_1 as string,",
