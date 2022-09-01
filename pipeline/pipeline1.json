@@ -21,7 +21,7 @@
 						"datasetParameters": {
 							"sink1": {
 								"filename": {
-									"value": "utcnow()",
+									"value": "@concat('SaleData_',formatDateTime(utcnow(),'yyyyMMdd_HHmm'),'.csv')",
 									"type": "Expression"
 								}
 							}
