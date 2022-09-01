@@ -24,7 +24,7 @@
 			"transformations": [],
 			"scriptLines": [
 				"parameters{",
-				"     testparam as string ('movies.csv')",
+				"     testparam as string",
 				"}",
 				"source(output(",
 				"          Column_1 as string,",
