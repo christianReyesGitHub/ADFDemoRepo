@@ -10,10 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().filenameparam",
-					"type": "Expression"
-				},
 				"fileSystem": "movielens"
 			},
 			"columnDelimiter": ",",
