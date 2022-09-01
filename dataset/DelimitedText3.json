@@ -1,0 +1,56 @@
+{
+	"name": "DelimitedText3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OrchestrationAzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "movies2.csv",
+				"container": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "Job Titles",
+				"type": "String"
+			},
+			{
+				"name": "Department",
+				"type": "String"
+			},
+			{
+				"name": "Full or Part-Time",
+				"type": "String"
+			},
+			{
+				"name": "Salary or Hourly",
+				"type": "String"
+			},
+			{
+				"name": "Typical Hours",
+				"type": "String"
+			},
+			{
+				"name": "Annual Salary",
+				"type": "String"
+			},
+			{
+				"name": "Hourly Rate",
+				"type": "String"
+			}
+		]
+	}
+}
