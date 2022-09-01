@@ -20,10 +20,7 @@
 						"type": "DataFlowReference",
 						"datasetParameters": {
 							"sink1": {
-								"filename": {
-									"value": "@concat('SaleData_',formatDateTime(utcnow(),'yyyyMMdd_HHmm'),'.csv')",
-									"type": "Expression"
-								}
+								"filenameParam": "@concat('SaleData_',formatDateTime(utcnow(),'yyyyMMdd_HHmm'),'.csv')"
 							}
 						}
 					},
