@@ -24,7 +24,7 @@
 			"transformations": [],
 			"scriptLines": [
 				"parameters{",
-				"     paramTest as string ('SaleData_')",
+				"     paramTest as string",
 				"}",
 				"source(output(",
 				"          Column_1 as string,",
