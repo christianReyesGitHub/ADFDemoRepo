@@ -41,7 +41,7 @@
 				"          Column_2 as string,",
 				"          Column_3 as string",
 				"     ),",
-				"     partitionFileNames:[($paramTest)],",
+				"     partitionFileNames:['\\'moviesTest\\''],",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
