@@ -6,9 +6,9 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"filename": {
+			"filetest": {
 				"type": "string",
-				"defaultValue": "'holatest'"
+				"defaultValue": "'test'"
 			}
 		},
 		"annotations": [],
@@ -16,10 +16,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().filename",
-					"type": "Expression"
-				},
 				"fileSystem": "movielens"
 			},
 			"columnDelimiter": ",",
