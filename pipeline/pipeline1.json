@@ -17,12 +17,7 @@
 				"typeProperties": {
 					"dataflow": {
 						"referenceName": "dataflow3",
-						"type": "DataFlowReference",
-						"datasetParameters": {
-							"sink1": {
-								"filenameParam": "@concat('SaleData_',formatDateTime(utcnow(),'yyyyMMdd_HHmm'),'.csv')"
-							}
-						}
+						"type": "DataFlowReference"
 					},
 					"compute": {
 						"coreCount": 8,
