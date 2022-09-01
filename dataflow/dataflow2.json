@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "test",
+						"referenceName": "DelimitedText3",
 						"type": "DatasetReference"
 					},
 					"name": "sink1"
@@ -33,9 +33,16 @@
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     umask: 0022,",
-				"     preCommands: [],",
-				"     postCommands: [],",
+				"     input(",
+				"          Name as string,",
+				"          {Job Titles} as string,",
+				"          Department as string,",
+				"          {Full or Part-Time} as string,",
+				"          {Salary or Hourly} as string,",
+				"          {Typical Hours} as string,",
+				"          {Annual Salary} as string,",
+				"          {Hourly Rate} as string",
+				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
