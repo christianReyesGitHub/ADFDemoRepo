@@ -8,7 +8,7 @@
 		"parameters": {
 			"filenameparam": {
 				"type": "string",
-				"defaultValue": "FileName"
+				"defaultValue": "'myfile.txt'"
 			}
 		},
 		"annotations": [],
@@ -16,6 +16,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().filenameparam",
+					"type": "Expression"
+				},
 				"fileSystem": "movielens"
 			},
 			"columnDelimiter": ",",
