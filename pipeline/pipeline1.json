@@ -17,7 +17,12 @@
 				"typeProperties": {
 					"dataflow": {
 						"referenceName": "dataflow3",
-						"type": "DataFlowReference"
+						"type": "DataFlowReference",
+						"datasetParameters": {
+							"source1": {
+								"filenameparam": "FileName"
+							}
+						}
 					},
 					"compute": {
 						"coreCount": 8,
