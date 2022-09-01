@@ -20,7 +20,10 @@
 						"type": "DataFlowReference",
 						"datasetParameters": {
 							"sink1": {
-								"filename": "test.csv"
+								"filename": {
+									"value": "utcnow()",
+									"type": "Expression"
+								}
 							}
 						}
 					},
