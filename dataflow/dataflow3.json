@@ -38,7 +38,7 @@
 				"          Column_2 as string,",
 				"          Column_3 as string",
 				"     ),",
-				"     partitionFileNames:[''],",
+				"     partitionFileNames:['concat(SaleData_,toString(currentUTC(yyyyMMdd_HHmm)),.csv)'],",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
