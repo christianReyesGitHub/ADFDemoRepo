@@ -1,0 +1,17 @@
+{
+	"name": "DestinationDataset_yzt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "azureblobstorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "sampledata"
+			}
+		}
+	}
+}
