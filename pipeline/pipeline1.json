@@ -18,6 +18,12 @@
 					"dataflow": {
 						"referenceName": "dataflow3",
 						"type": "DataFlowReference",
+						"parameters": {
+							"param2": {
+								"value": "'@{concat('SaleData_',formatDateTime(utcnow(),'yyyyMMdd_HHmm'),'.csv')}'",
+								"type": "Expression"
+							}
+						},
 						"datasetParameters": {
 							"sink1": {
 								"filename": {
