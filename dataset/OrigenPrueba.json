@@ -8,7 +8,7 @@
 		"parameters": {
 			"filenameparam": {
 				"type": "string",
-				"defaultValue": "'sourcetest'"
+				"defaultValue": "'movies.csv'"
 			}
 		},
 		"annotations": [],
