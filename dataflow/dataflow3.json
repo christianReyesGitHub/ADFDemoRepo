@@ -24,7 +24,7 @@
 			"transformations": [],
 			"scriptLines": [
 				"parameters{",
-				"     param2 as string ('moviestest_')",
+				"     param2 as string ('movies_')",
 				"}",
 				"source(output(",
 				"          Column_1 as string,",
