@@ -17,7 +17,10 @@
 				"typeProperties": {
 					"dataflow": {
 						"referenceName": "dataflow3",
-						"type": "DataFlowReference"
+						"type": "DataFlowReference",
+						"parameters": {
+							"paramTest": "'holatest'"
+						}
 					},
 					"compute": {
 						"coreCount": 8,
