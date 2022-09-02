@@ -8,7 +8,7 @@
 		"parameters": {
 			"filenameparam": {
 				"type": "string",
-				"defaultValue": "csv"
+				"defaultValue": "'csv'"
 			}
 		},
 		"annotations": [],
