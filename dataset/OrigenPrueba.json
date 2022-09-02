@@ -5,21 +5,12 @@
 			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"filenameparam": {
-				"type": "string",
-				"defaultValue": "'csv'"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().filenameparam",
-					"type": "Expression"
-				},
+				"fileName": "movies.csv",
 				"fileSystem": "movielens"
 			},
 			"columnDelimiter": ",",
