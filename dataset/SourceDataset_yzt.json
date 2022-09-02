@@ -1,0 +1,21 @@
+{
+	"name": "SourceDataset_yzt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "azureblobstorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "azure-data-factory-by-example-main.zip",
+				"container": "landing"
+			},
+			"compression": {
+				"type": "ZipDeflate"
+			}
+		}
+	}
+}
