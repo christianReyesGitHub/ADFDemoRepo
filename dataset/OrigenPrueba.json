@@ -16,7 +16,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "movies.csv",
+				"fileName": {
+					"value": "@dataset().filenameparam",
+					"type": "Expression"
+				},
 				"fileSystem": "movielens"
 			},
 			"columnDelimiter": ",",
