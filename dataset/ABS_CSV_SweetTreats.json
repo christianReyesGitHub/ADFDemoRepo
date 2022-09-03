@@ -13,6 +13,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "Sales.csv",
 				"folderPath": "azure-data-factory-by-example-main/SampleData/SweetTreats/Apr-20",
 				"container": "sampledata"
 			},
