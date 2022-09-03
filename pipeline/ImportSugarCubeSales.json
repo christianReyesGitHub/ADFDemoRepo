@@ -59,7 +59,7 @@
 							},
 							{
 								"source": {
-									"path": "$['Sales']['Product']"
+									"path": "$['Sales'][0]['Product']"
 								},
 								"sink": {
 									"name": "Product",
@@ -68,7 +68,7 @@
 							},
 							{
 								"source": {
-									"path": "$['Sales']['ManufacturerProductCode']"
+									"path": "$['Sales'][0]['ManufacturerProductCode']"
 								},
 								"sink": {
 									"name": "ManufacturerProductCode",
@@ -77,7 +77,7 @@
 							},
 							{
 								"source": {
-									"path": "$['Sales']['Units']"
+									"path": "$['Sales'][0]['Units']"
 								},
 								"sink": {
 									"name": "UnitsSold",
@@ -86,7 +86,7 @@
 							},
 							{
 								"source": {
-									"path": "$['Sales']['Value']"
+									"path": "$['Sales'][0]['Value']"
 								},
 								"sink": {
 									"name": "SalesValueUSD",
