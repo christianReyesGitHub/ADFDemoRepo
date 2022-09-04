@@ -95,7 +95,7 @@
 							},
 							{
 								"source": {
-									"path": "$['Sales'][1]['Product']"
+									"path": "$['$[\\'Sales\\'][1][\\'Product\\']']"
 								},
 								"sink": {
 									"name": "Product",
@@ -103,7 +103,7 @@
 								}
 							}
 						],
-						"collectionReference": "$['Sales']",
+						"collectionReference": "",
 						"mapComplexValuesToString": false
 					}
 				},
