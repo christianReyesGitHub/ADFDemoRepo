@@ -41,15 +41,6 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "['Column_1']"
-								},
-								"sink": {
-									"name": "Retailer",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
 									"path": "$['Month']"
 								},
 								"sink": {
@@ -100,6 +91,15 @@
 								"sink": {
 									"name": "SalesValueUSD",
 									"type": "Decimal"
+								}
+							},
+							{
+								"source": {
+									"path": "$['$[\\'Sales\\'][1][\\'Product\\']']"
+								},
+								"sink": {
+									"name": "Product",
+									"type": "String"
 								}
 							}
 						],
