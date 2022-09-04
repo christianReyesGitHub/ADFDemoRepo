@@ -92,6 +92,15 @@
 									"name": "SalesValueUSD",
 									"type": "Decimal"
 								}
+							},
+							{
+								"source": {
+									"path": "$['Sales'][1]['Product']"
+								},
+								"sink": {
+									"name": "Product",
+									"type": "String"
+								}
 							}
 						],
 						"collectionReference": "$['Sales']",
